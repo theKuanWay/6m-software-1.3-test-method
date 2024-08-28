@@ -37,7 +37,7 @@ function printByKey(key){
 }
 
 booksObj = convert(bookIdArr, bookTitle);
-printByKey("NLB2"); // prints "Progamming for Dummies"
+printByKey("NLB4"); // prints "Progamming for Dummies"
 
 // Ignore the code below this line
 module.exports = {
