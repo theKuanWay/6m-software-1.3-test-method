@@ -1,15 +1,18 @@
+//use the functions from sample.js
 const {addFunc, isDivisibleBy5} = require("./sample");
 
-describe("Test Suite for sample.js functions", ()=>{
-    
-    it("should add 3 numbers", ()=>{
-        const result = addFunc(1, 3, 4);
-        expect(result).toBe(7);
+//create the test suite
+describe("Test Suite for sample.js functions", () => {
+    //write the test for func addFunc
+    it("should add 3 numbers", () => {
+        const result = addFunc(1,3,4);
+        //compare the result to an expected value:
+        expect(result).toBe(8);
     })
 
+    //write the test for fun isDivisibleBy5
     it("should check divisibility by 5", ()=>{
-        const result = isDivisibleBy5(1283);
+        const result = isDivisibleBy5(4);
         expect(result).toBe(false);
     })
 })
-//So when the command `npm run test` is run, it calls the test suite and runs the individual tests.
